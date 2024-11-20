@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg bg-dark px-5 py-3 text-light">
+  <div class="container-fluid">
+    <a class="navbar-brand mb-2 fs-3" href="/"><img class="logo" src="/img/logo2.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        {{#if isHome}}
+        <a href="/registro" class="text-decoration-none text-light fs-4  m-2 px-3 text-uppercase">Registrarse</a>
+        <a href="/login" class="text-decoration-none text-light fs-4  m-2 px-3 text-uppercase">Iniciar Sesión</a>
+        {{/if}}
+
+        {{#if isRegisterPage}}
+        <a href="/login" class="text-decoration-none text-light fs-4  m-2 px-3 text-uppercase ">Iniciar Sesión</a>
+        {{/if}}
+
+        {{#if isLoginPage}}
+        <a href="/registro" class="text-decoration-none text-light fs-4  m-2 px-3 text-uppercase">Registrarse</a>
+        {{/if}}
+
+        {{#if isProfilePage}}
+        <a href="/dashboard" class="text-decoration-none text-light fs-4  m-2 px-3 text-uppercase">Dashboard</a>
+        <a href="/logout" class="text-decoration-none text-light fs-4  m-2 px-3 text-uppercase">Cerrar Sesión</a>
+        {{/if}}
+
+        {{#if isDashboardPage}}
+        <a href="/perfil/{{userId}}?token={{token}}" class="text-decoration-none text-light fs-4  m-2 px-4 text-uppercase">Perfil</a>
+        <a href="/logout" class="text-decoration-none text-light fs-4  m-2 px-2 text-uppercase">Cerrar Sesión</a>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>

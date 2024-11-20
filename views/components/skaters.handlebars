@@ -1,0 +1,29 @@
+<div class=" d-flex justify-content-center">
+  <div class="col-10">
+    <table class="table table-striped">
+      <thead>
+        <tr class="text-uppercase fw-bold">
+          <th>ID</th>
+          <th>Foto</th>
+          <th>Nombre</th>
+          <th>Especialidad</th>
+          <th style="width: 20%;">Email</th>
+          <th style="width: 20%;">Años de experiencia</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each skaters}}
+        <tr>
+          <td>{{this.id}}</td>
+          <td><img class="rounded-circle" src="{{this.foto}}" alt="{{this.nombre}}" style="width: 100px; height: 100px;"></td>
+          <td>{{this.nombre}}</td>
+          <td>{{this.especialidad}}</td>
+          <td>{{this.email}}</td>
+          <td>{{this.anos_experiencia}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
+

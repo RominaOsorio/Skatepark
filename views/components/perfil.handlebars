@@ -1,0 +1,79 @@
+<div class="hero hero-perfil">
+
+<div class="container pt-5">
+  <div class="d-flex justify-content-center">
+    <div class="col-8">
+
+  <form id="form-perfil" action="/perfil/{{skater.id}}?token={{token}}" method="POST" class="border border-2 rounded p-5 bg-light">
+    <div class="text-center">
+    <img class="form-logo pt-3" src="/img/logo.png" alt="logo XGame">
+
+    </div>
+    <legend class="text-center text-uppercase mb-4 fst-italic fw-bold titulo">Datos del perfil</legend>
+
+    <div class="row">
+      <div class="row mb-3">
+        <div class="col-md-2">
+          <label for="email" class="form-label text-uppercase fw-bold">Email</label>
+        </div>
+        <div class="col-md-10">
+          <input type="email" class="form-control" id="email" name="email" value="{{skater.email}}" required disabled>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-2">
+          <label for="nombre" class="form-label text-uppercase fw-bold">Nombre</label>
+        </div>
+        <div class="col-md-10">
+          <input type="text" class="form-control" id="nombre" name="nombre" value="{{skater.nombre}}" required>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-2">
+          <label for="anos_experiencia" class="form-label text-uppercase fw-bold">Años de experiencia</label>
+        </div>
+        <div class="col-md-10">
+          <input type="text" class="form-control" id="anos_experiencia" name="anos_experiencia" value="{{skater.anos_experiencia}}" required>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-2">
+          <label for="password" class="form-label text-uppercase fw-bold">Password</label>
+        </div>
+        <div class="col-md-10">
+          <input type="password" class="form-control" id="password" name="password" value="{{skater.password}}" required>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-2">
+          <label for="password-repeat" class="form-label text-uppercase fw-bold">Repita password</label>
+        </div>
+        <div class="col-md-10">
+          <input type="password" class="form-control" id="password-repeat" name="password-repeat" value="{{skater.password}}" required>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-md-2">
+          <label for="especialidad" class="form-label text-uppercase fw-bold">Especialidad</label>
+        </div>
+        <div class="col-md-10">
+          <input type="text" class="form-control" id="especialidad" name="especialidad" value="{{skater.especialidad}}" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-3">
+      <button type="submit" class="btn boton text-uppercase px-4 py-2 my-3 bg-dark" id="btn-actualizar">Actualizar</button>
+      <button type="button" class="btn boton text-uppercase px-5 py-2 my-3" id="btn-eliminar" data-id="{{skater.id}}">Eliminar</button>
+
+    </div>
+  </form>
+    </div>
+  </div>
+</div>
+</div>

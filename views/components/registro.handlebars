@@ -1,0 +1,69 @@
+<div class="hero hero-registro">
+
+  <div class="container pt-5">
+    <div class="d-flex justify-content-center">
+      <div class="col-8">
+
+        <form method="POST" enctype="multipart/form-data" class="border border-2 rounded p-5 bg-light">
+          <div class="text-center">
+
+            <img class="form-logo pt-3" src="/img/logo.png" alt="logo XGame">
+          </div>
+          <legend class="text-center text-uppercase fst-italic fw-bold titulo">Registro</legend>
+          <div class="row">
+
+            <div class="col-12 col-md-6">
+              <div class="mb-3">
+                <label for="email" class="form-label text-uppercase fw-bold">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="nombre" class="form-label text-uppercase fw-bold">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="anos_experiencia" class="form-label text-uppercase fw-bold">Años de experiencia</label>
+                <input type="text" class="form-control" id="anos_experiencia" name="anos_experiencia" required>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="mb-3">
+                <label for="password" class="form-label text-uppercase fw-bold">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="password-repeat" class="form-label text-uppercase fw-bold">Repita password</label>
+                <input type="password" class="form-control" id="password-repeat" name="password-repeat" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="especialidad" class="form-label text-uppercase fw-bold">Especialidad</label>
+                <input type="text" class="form-control" id="especialidad" name="especialidad" required>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="d-flex mb-3">
+                <label for="foto" class="form-label text-uppercase fw-bold">Foto de perfil</label>
+                <input type="file" class="form-control m-2" id="foto" name="foto" required>
+              </div>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn boton text-uppercase px-5 py-2 my-3">Enviar <i
+                  class="fa-solid fa-arrow-right"></i></button>
+              <p>¿Ya tienes una cuenta? <a href="/login" class="text-decoration-none fw-bold color-dark">Inicia
+                  sesión</a></p>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

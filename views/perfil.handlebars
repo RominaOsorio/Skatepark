@@ -1,0 +1,13 @@
+{{> navbar}}
+
+
+{{> perfil}}
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get('token');
+
+    if (token) {
+        sessionStorage.setItem('token', token);
+    }
+</script>
